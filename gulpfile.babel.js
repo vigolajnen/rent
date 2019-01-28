@@ -129,7 +129,7 @@ gulp.task("html", function () {
 
 gulp.task("vendor", function () {
   gulp.src([
-      "source/js/libs/jquery-3.3.1.min.js",
+      "source/js/libs/jquery-3.3.1.js",
       "source/js/libs/picturefill.min.js",
       "source/js/libs/svg4everybody.min.js",
       "source/js/libs/jquery.viewportchecker.min.js",

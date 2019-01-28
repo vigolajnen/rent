@@ -1,0 +1,17 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100px;
+  height: 100vh;
+  background-color: #B22A2E;
+  & .button {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  &__icon {
+    padding: 40px;
+  }
+}
