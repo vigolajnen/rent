@@ -63,6 +63,7 @@
   display: block;
   line-height: normal;
   font-size: 18px;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #333333;
@@ -169,7 +170,7 @@
   }
 
   .navigation__item {
-    margin-right: 20px;
+    margin-right: 60px;
     &:last-child {
       margin-right: 0;
     }

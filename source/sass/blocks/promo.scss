@@ -1,3 +1,10 @@
 .promo {
-
+  min-height: 80%;
+  background-color: #E9E9E9;
+  &--bg {
+    background-image: url("../../img/promo/promo.jpg");
+    background-position: top left;
+    background-size: 64% 100vh;
+    background-repeat: no-repeat;
+  }
 }
