@@ -1,5 +1,12 @@
 .page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+
+  }
   &__button {
+    width: 108px;
     background-color: #B3282D;
   }
 }

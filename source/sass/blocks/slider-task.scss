@@ -1,0 +1,74 @@
+.slider-task {
+  &__wrapper {
+    display: flex;
+  }
+  &__item {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    opacity: 0.1;
+    border: 1px solid #333333;
+  }
+  &__box {
+    padding-left: 150px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../../img/icons/icon-arrow-double.svg");
+    }
+
+    &--icon-1,
+    &--icon-2,
+    &--icon-3 {
+      position: relative;
+    }
+    &--icon-1::before,
+    &--icon-2::before,
+    &--icon-3::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--icon-1::before {
+      background-image: url("../../img/icons/icon-task-1.svg");
+    }
+    &--icon-2::before {
+      background-image: url("../../img/icons/icon-task-2.svg");
+    }
+    &--icon-3::before {
+      background-image: url("../../img/icons/icon-task-3.svg");
+    }
+  }
+  &__mark {
+    line-height: 18px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #B3282D;
+  }
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 21px;
+    letter-spacing: 0.02em;
+    color: #444444;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}

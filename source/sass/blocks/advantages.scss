@@ -1,8 +1,4 @@
 .advantages {
-  background-image: url("../../img/advantages/advantages-bg.jpg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: contain;
   &__box {
     position: relative;
     background-color: #ffffff;
@@ -11,43 +7,18 @@
     margin: 0;
   }
   &__item {
-    padding: 204px 57px 64px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 57px 64px 50px;
     background-color: #ffffff;
     border: 1px solid #d4d1d1;
     &--red {
       background-color: $color-title;
     }
-    &--icon-1,
-    &--icon-2,
-    &--icon-3,
-    &--icon-4 {
-      position: relative;
-      margin-bottom: 50px;
-    }
-    &--icon-1::before,
-    &--icon-2::before,
-    &--icon-3::before,
-    &--icon-4::before {
-      position: absolute;
-      content:"";
-      top: 0;
-      left: 0;
-      width: 100px;
-      height: 100px;
-      display: block;
-    }
-    &--icon-1::before {
-      background-image: url("../../img/icons/icon-adv-1.svg");
-    }
-    &--icon-2::before {
-      background-image: url("../../img/icons/icon-adv-2.svg");
-    }
-    &--icon-3::before {
-      background-image: url("../../img/icons/icon-adv-3.svg");
-    }
-    &--icon-4::before {
-      background-image: url("../../img/icons/icon-adv-4.svg");
-    }
+  }
+  &__icon {
+    margin-bottom: 60px;
   }
   &__name {
     margin: 0;
