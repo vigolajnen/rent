@@ -1,0 +1,7 @@
+.section {
+  position: relative;
+  height: 100vh;
+  &--bg-feedback {
+    background-image: url("../../img/feedback/feedback-bg.jpg");
+  }
+}

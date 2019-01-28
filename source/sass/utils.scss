@@ -1,0 +1,44 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+@function px-to-rem($px) {
+  @return ($px/16)+rem;
+}
+
+@mixin font-size($font_px) {
+  font-size: $font_px + px;
+  font-size: px-to-rem($font_px);
+
+  $line_h: $font_px * 1, 2;
+
+  line-height: $line_h + px;
+  line-height: px-to-rem($line_h);
+}
+
+@function get-vw($target) {
+  $vw-context: (1000*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+.vp-invisible {
+  // opacity: 0;
+  -webkit-transform: translate3d(0, 15vh, 0);
+  transform: translate3d(0, 15vh, 0);
+  transition: all 1s
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0);
+  visibility: visible !important
+}

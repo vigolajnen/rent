@@ -1,0 +1,25 @@
+.logo {
+  height: auto;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.logo__link {
+  display: block;
+}
+
+.logo__pic {
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width-xxl) {
+  .logo__pic {
+    width: 130px;
+  }
+}

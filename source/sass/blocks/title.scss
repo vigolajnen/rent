@@ -1,0 +1,29 @@
+.title {
+  margin: 0;
+  display: inline-block;
+
+  font-family: $font-playfairDisplay;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 68px;
+  font-size: 68px;
+
+  color: $color-title;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--before {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -65px;
+      left: 0;
+      width: 20%;
+      height: 4px;
+      background-color: #878787;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Spectral:400,700&subset=cyrillic');
+
+@import "normalize.scss";
+
+
+@import "variables.scss";
+@import "base.scss";
+@import "utils.scss";
+@import "blocks/button.scss";
+
+// @import "sprite-png.scss";
+@import "blocks/sprite.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/phone.scss";
+@import "blocks/navigation.scss";
+
+@import "blocks/section.scss";
+
+@import "blocks/advantages.scss";
+@import "blocks/promo.scss";
+@import "blocks/feedback.scss";
