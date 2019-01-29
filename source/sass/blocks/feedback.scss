@@ -1,8 +1,11 @@
 .feedback {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 70%;
+  position: relative;
+  @media (min-width: $desktop-width-xl) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+  }
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +13,9 @@
     max-width: 100%;
     padding: 8%;
     background-color: #efefef;
+    @media (min-width: $tablet-width) {
+      margin-left: 80px;
+    }
   }
   &__caption {
     width: 100%;
@@ -31,6 +37,9 @@
     }
     &:last-child {
       width: 35%;
+      @media (min-width: $tablet-width) {
+        width: 45%;
+      }
     }
     & p {
       max-width: 300px;
@@ -65,6 +74,9 @@
     color: $color-black;
     opacity: 0.6;
     background-color: $color-white;
+
+    animation-name: itemBlock;
+    animation-duration: 2s;
   }
   &__form-button {
     align-self: flex-end;

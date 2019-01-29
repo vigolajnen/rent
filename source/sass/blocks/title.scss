@@ -7,15 +7,18 @@
   font-weight: normal;
   line-height: 40px;
   font-size: 40px;
+  font-size: calc(100vw * 0.081);
 
   color: $color-title;
   @media (min-width: $tablet-width) {
     line-height: 48px;
     font-size: 48px;
+    font-size: calc(100vw * 0.046);
   }
   @media (min-width: $desktop-width) {
     line-height: 68px;
     font-size: 68px;
+    font-size: calc(100vw * 0.035);
   }
 
   &--white {
@@ -39,3 +42,4 @@
 .title.title--white {
   color: $color-white;
 }
+

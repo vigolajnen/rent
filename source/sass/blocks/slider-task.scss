@@ -30,6 +30,12 @@
 
     border: 1px solid #d4d1d1;
     @media (min-width: $tablet-width) {
+      width: 85%;
+    }
+    @media (min-width: $desktop-width) {
+      width: 45%;
+    }
+    @media (min-width: $desktop-width-xl) {
       width: 31.3%;
     }
   }
@@ -87,16 +93,21 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    font-size: 21px;
+    font-size: 16px;
+    // font-size: calc(100vw * 0.011);
     letter-spacing: 0.02em;
     color: #444444;
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+    }
   }
   &__buttons {
     position: absolute;
-    top: 55px;
+    top: 0;
     right: 0;
     width: 100px;
     height: 100%;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
   }
@@ -104,29 +115,37 @@
 
 .slider-task__button-prev {
   position: relative;
-  top: 0;
+  width: 30px;
+  height: 30px;
   outline: none;
   &::before {
     position: absolute;
-    content: "";
-    top: 50%;
+    content: ">";
+    top: 0;
     left: 0;
     display: block;
-    transform: translateY(-50%);
-    @include sprite ($icon-arrow-red);
+    width: 30px;
+    height: 30px;
+    color: #b22a2e;
+    // transform: translateY(-50%);
+    // @include sprite ($icon-arrow-red);
   }
 }
 .slider-task__button-next {
   position: relative;
-  bottom: -58px;
+  width: 30px;
+  height: 30px;
   outline: none;
   &::before {
     position: absolute;
-    content: "";
+    content: "<";
     top: 0;
     right: 0;
     display: block;
-    @include sprite ($icon-arrow-grey);
+    width: 30px;
+    height: 30px;
+    color: #dddddd;
+    // @include sprite ($icon-arrow-grey);
   }
 }
 

@@ -16,6 +16,11 @@
   font-style: normal;
 }
 
+@media (min-width: $desktop-width) {
+  .adaptive {
+    font-size: calc(100vw * 0.0354);
+  }
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -26,6 +31,8 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  overflow-y: visible !important;
+  overflow-x: hidden;
 
   font-family: $font-norms;
   line-height: 23px;
@@ -35,9 +42,11 @@ body {
 
 @media (max-width: $mobile-width-only) {
   body, html {
-    overflow: visible;
+    overflow-y: visible;
   }
 }
+
+
 
 .onepage-wrapper, .onepage-wrapper .section, body, html {
   width: 100%;

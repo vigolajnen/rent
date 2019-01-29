@@ -6,6 +6,8 @@
   width: 100px;
   height: 100vh;
   background-color: #B22A2E;
+  animation-name: navBarleft;
+  animation-duration: 0.5s;
   & .button {
     position: relative;
     top: 0;

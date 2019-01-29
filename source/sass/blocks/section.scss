@@ -1,8 +1,12 @@
 .section {
   position: relative;
   height: 100%;
+  overflow-y: hidden;
   background-repeat: no-repeat;
   @media (min-width: $tablet-width) {
+    
+  }
+  @media (min-width: $desktop-width-xl) {
     height: 100vh;
   }
 
@@ -18,14 +22,25 @@
   &--bg-advantages {
     background-image: url("../../img/advantages/advantages-bg.jpg");
     background-position: top right;
-    background-size: 56% 100vh;
+    background-size: 56% 100%;
     background-repeat: no-repeat;
+    @media (min-width: $desktop-width-xl) {
+      background-size: 56% 100vh;
+    }
   }
   &__promo {
     height: 80%;
   }
   &__slider {
     height: 20%;
+    margin-left: 0;
+    width: calc(100% - 80px);
+    display: flex;
+    overflow: hidden;
+    @media (min-width: $desktop-width) {
+      margin-left: 138px;
+      width: calc(100vw - 238px);
+    }
   }
   &__advantages {
     height: 80%;
@@ -39,7 +54,10 @@
   margin-left: 138px;
   padding-left: 100px;
   padding-right: 5%;
-  display: flex;
+  display: none;
+  @media (min-width: $desktop-width-xl) {
+    display: flex;
+  }
 
   &__inner {
     display: flex;
@@ -70,5 +88,19 @@
   }
   .box {
     display: none;
+  } 
+}
+
+@media (max-width: $desktop-width) {
+  .section {
+    position: relative !important;
+    height: 100%;
+  }
+  .onepage-pagination {
+    display: none;
+  }
+  .section-scroll.onepage-wrapper {
+    transform: none !important;
+    transition: none !important;
   }
 }

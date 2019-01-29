@@ -128,7 +128,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("video", function () {
-  return gulp.src("source/video/*.mp4")
+  return gulp.src("source/video/*.{mp4,ogg}")
     .pipe(gulp.dest("build/video"));
 });
 
