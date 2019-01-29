@@ -1,35 +1,39 @@
 .slider-task {
   position: relative;
+  height: 100%;
   margin-left: 100px;
   overflow: hidden;
   &__wrapper {
     display: flex;
     position: relative;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
   }
   &__item {
-    width: 31%;
+    width: 31.3%;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     border: 1px solid #d4d1d1;
   }
   &__box {
     padding-left: 150px;
     position: relative;
-    &::before {
+    &::after {
       position: absolute;
       content: "";
-      top: 0;
-      right: 0;
+      bottom: 10px;
+      right: 30px;
       display: block;
       width: 20px;
       height: 20px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url("../../img/icons/icon-arrow-double.svg");
+      @include sprite ($icon-arrow-double);
     }
 
     &--icon-1,
@@ -68,6 +72,7 @@
     color: #B3282D;
   }
   &__name {
+    max-width: 300px;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -102,7 +107,7 @@
 }
 .slider-task__button-next {
   position: relative;
-  bottom: 0;
+  bottom: -58px;
   outline: none;
   &::before {
     position: absolute;
@@ -112,4 +117,14 @@
     display: block;
     @include sprite ($icon-arrow-grey);
   }
+}
+
+.slider-task__pagination {
+  line-height: normal;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+
+  position: absolute;
+    top: 50px;
+    left: 40px;
 }

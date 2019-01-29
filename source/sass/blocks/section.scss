@@ -7,4 +7,50 @@
     background-image: url("../../img/feedback/feedback-bg.jpg");
     background-size: cover;
   }
+  &--bg-advantages {
+    background-image: url("../../img/advantages/advantages-bg.jpg");
+    background-position: top right;
+    background-size: 56% 100vh;
+    background-repeat: no-repeat;
+  }
+  &__promo {
+    height: 80%;
+  }
+  &__slider {
+    height: 20%;
+  }
+  &__advantages {
+    height: 80%;
+  }
+  &__box {
+    height: 20%;
+  }
+}
+
+.box {
+  margin-left: 138px;
+  padding-left: 100px;
+  padding-right: 5%;
+  display: flex;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: #ffffff;
+  }
+  &__link {
+    width: 34%;
+    height: 100%;
+
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 100px 96px;
+    background: #B22A2E;
+    text-decoration: none;
+  }
 }

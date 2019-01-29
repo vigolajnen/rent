@@ -134,6 +134,8 @@ gulp.task("vendor", function () {
       "source/js/libs/svg4everybody.min.js",
       "source/js/libs/jquery.viewportchecker.min.js",
       "source/js/libs/slick.min.js",
+      "source/js/libs/jquery.onepage-scroll.js",
+      "source/js/libs/jquery.onepage-scroll.min.js",
     ])
     .pipe(concat("vendor.min.js"))
     .pipe(gulp.dest("build/js"));
