@@ -31,3 +31,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: $mobile-width-only) {
+  .page-header {
+    height: 64px;
+    padding-left: 24px;
+  }
+  .page-header__button {
+    display: none;
+  }
+}

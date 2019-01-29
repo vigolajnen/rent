@@ -5,10 +5,18 @@
   font-family: $font-playfairDisplay;
   font-style: normal;
   font-weight: normal;
-  line-height: 68px;
-  font-size: 68px;
+  line-height: 40px;
+  font-size: 40px;
 
   color: $color-title;
+  @media (min-width: $tablet-width) {
+    line-height: 48px;
+    font-size: 48px;
+  }
+  @media (min-width: $desktop-width) {
+    line-height: 68px;
+    font-size: 68px;
+  }
 
   &--white {
     color: $color-white;

@@ -127,6 +127,11 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("video", function () {
+  return gulp.src("source/video/*.mp4")
+    .pipe(gulp.dest("build/video"));
+});
+
 gulp.task("vendor", function () {
   gulp.src([
       "source/js/libs/jquery-3.3.1.js",
@@ -171,6 +176,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "images",
+    "video",
     "style",
     "sprite",
     "sprite-png",

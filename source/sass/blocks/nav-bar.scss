@@ -37,6 +37,13 @@
 
 @media (max-width: $mobile-width-only) {
   .nav-bar {
-   display: none;
+    width: 64px;
+    height: 64px;
+    left: auto;
+    right: 0;
+  }
+  .nav-bar__button {
+    width: 64px;
+    height: 64px;
   }
 }
