@@ -1,14 +1,18 @@
 .slider-task {
   position: relative;
   margin-left: 100px;
+  overflow: hidden;
   &__wrapper {
     display: flex;
+    position: relative;
     width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
   }
   &__item {
     width: 31%;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 
     border: 1px solid #d4d1d1;
   }
@@ -73,11 +77,39 @@
   }
   &__buttons {
     position: absolute;
-    top: 0;
+    top: 55px;
     right: 0;
     width: 100px;
     height: 100%;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.slider-task__button-prev {
+  position: relative;
+  top: 0;
+  outline: none;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    display: block;
+    transform: translateY(-50%);
+    @include sprite ($icon-arrow-red);
+  }
+}
+.slider-task__button-next {
+  position: relative;
+  bottom: 0;
+  outline: none;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    display: block;
+    @include sprite ($icon-arrow-grey);
   }
 }

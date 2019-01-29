@@ -1,4 +1,5 @@
 .promo {
+  display: flex;
   min-height: 80%;
   background-color: #E9E9E9;
   &--bg {
@@ -6,5 +7,47 @@
     background-position: top left;
     background-size: 64% 100vh;
     background-repeat: no-repeat;
+  }
+  & img {
+    padding: 0 100px;
+  }
+}
+
+.promo__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__text {
+  max-width: 1226px;
+  padding-left: 150px;
+}
+
+.promo__caption {
+  line-height: 25px;
+  font-size: 22px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.link-more {
+  line-height: normal;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.link-more--icon {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icons/icon-arrow-double.svg");
   }
 }

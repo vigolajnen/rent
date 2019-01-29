@@ -2,13 +2,16 @@
 
 @import "normalize.scss";
 
+@import "slick-theme.scss";
+@import "slick.scss";
+
 
 @import "variables.scss";
 @import "base.scss";
 @import "utils.scss";
 @import "blocks/button.scss";
 
-// @import "sprite-png.scss";
+@import "sprite-png.scss";
 // @import "blocks/sprite.scss";
 
 @import "blocks/page-header.scss";
