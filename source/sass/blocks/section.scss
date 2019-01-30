@@ -3,50 +3,57 @@
   height: 100%;
   overflow-y: hidden;
   background-repeat: no-repeat;
+
   @media (min-width: $tablet-width) {
-    
+    height: 100%;
   }
+
   @media (min-width: $desktop-width-xl) {
     height: 100vh;
   }
 
   &--bg-feedback {
     background-image: url("../../img/feedback/feedback-mob.jpg");
-    background-size: top center;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: 480px) {
       background-image: url("../../img/feedback/feedback-bg.jpg");
       background-size: cover;
     }
   }
+
   &--bg-advantages {
     background-image: url("../../img/advantages/advantages-bg.jpg");
     background-position: top right;
-    background-size: 56% 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-size: 56% 100%;
+    }
+
     @media (min-width: $desktop-width-xl) {
       background-size: 56% 100vh;
     }
   }
+
   &__promo {
     height: 80%;
   }
+
   &__slider {
     height: 20%;
     margin-left: 0;
-    width: calc(100% - 80px);
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
-    @media (min-width: $desktop-width) {
-      margin-left: 138px;
-      width: calc(100vw - 238px);
-    }
   }
+
   &__advantages {
-    height: 80%;
+    height: 85%;
   }
+
   &__box {
-    height: 20%;
+    height: 15%;
   }
 }
 
@@ -55,9 +62,20 @@
   padding-left: 100px;
   padding-right: 5%;
   display: none;
-  @media (min-width: $desktop-width-xl) {
+
+  @media (min-width: 1140px) {
     display: flex;
+    padding-right: 0;
   }
+
+  @media (min-width: 1550px) {
+    padding-right: 5%;
+  }
+
+  @media (max-width: 1500px) {
+    padding-left: 0;
+  }
+
 
   &__inner {
     display: flex;
@@ -66,8 +84,13 @@
     background-color: #ffffff;
     border-top: 1px solid #d4d1d1;
   }
+
   &__link {
-    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 33.33%;
     height: 100%;
 
     line-height: normal;
@@ -76,19 +99,33 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 100px 96px;
+    padding: 20px;
     background: #B22A2E;
     text-decoration: none;
+
+    @media (min-width: 1140px) {
+      width: 34%;
+    }
+
+    @media (min-width: $desktop-width-x) {
+      width: 25%;
+    }
   }
 }
 
 @media (max-width: $mobile-width-only) {
+  .section {
+    transform: none !important;
+    overflow: hidden;
+  }
+
   .section__advantages {
     height: 100%;
   }
+
   .box {
     display: none;
-  } 
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -96,11 +133,14 @@
     position: relative !important;
     height: 100%;
   }
+
   .onepage-pagination {
     display: none;
   }
+
   .section-scroll.onepage-wrapper {
-    transform: none !important;
+    transform: translate3d(0, 0, 0) !important;
     transition: none !important;
+    overflow-y: scroll;
   }
 }

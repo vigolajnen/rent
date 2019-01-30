@@ -1,7 +1,7 @@
 .navigation {
   position: relative;
   margin: 0 auto;
-  
+
 }
 
 .navigation__wrapper {
@@ -49,6 +49,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
@@ -59,8 +60,8 @@
   display: block;
   margin: 0;
   display: none;
-  
-  @media (min-width: $tablet-width) {
+
+  @media (min-width: $desktop-width) {
     display: block;
     animation-name: navItemtop;
     animation-duration: 1s;
@@ -69,12 +70,15 @@
     &:nth-child(1) {
       animation-delay: 0s;
     }
+
     &:nth-child(2) {
       animation-delay: 0.3s;
     }
+
     &:nth-child(3) {
       animation-delay: 0.5s;
     }
+
     &:nth-child(4) {
       animation-delay: 0.8s;
     }
@@ -84,16 +88,13 @@
 .navigation__link {
   display: block;
   line-height: normal;
-  font-size: 18px;
-  font-size: calc(100vw * 0.01);
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #333333;
   opacity: 0.9;
   text-decoration: none;
-  
-  
 
   &:hover {
     color: #B22A2E;
@@ -179,6 +180,7 @@
     height: auto;
     border-bottom-color: transparent;
   }
+
   .navigation--nojs .navigation__toggle {
     display: none;
   }
@@ -196,6 +198,7 @@
 
   .navigation__item {
     margin-right: 60px;
+
     &:last-child {
       margin-right: 0;
     }
@@ -212,6 +215,7 @@
 
 .navigation .navigation__item.logo {
   display: block;
+
   @media (min-width: $tablet-width) {
     display: block;
   }

@@ -2,25 +2,31 @@
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     margin-left: 138px;
-    
+
   }
+
   @media (min-width: $desktop-width-xl) {
     padding-left: 100px;
     padding-right: 15%;
   }
+
   &__title {
     width: auto;
+
     @media (min-width: $tablet-width) {
       max-width: 500px;
     }
+
+    @media (min-width: $tablet-width) and (max-width: 1140px) {
+      padding: 50px 0;
+    }
   }
 
-
   &__item {
-    // width: 365px;
     width: 100%;
     padding: 20px;
     display: flex;
@@ -28,17 +34,32 @@
     align-items: flex-start;
     background-color: #ffffff;
     border: 1px solid #d4d1d1;
-    @media (min-width: $tablet-width) {
+
+    @media (min-width: 600px) {
       width: 50%;
-      padding: 165px 20px 20px;
+      padding: 20px;
     }
-    @media (min-width: $desktop-width) {
-      width: 33%;
+
+    @media (min-width: $tablet-width) {
+      justify-content: center;
     }
+
+    @media (min-width: 1140px) {
+      width: 33.33%;
+      flex-grow: 1;
+      padding: 0 20px;
+    }
+
     @media (min-width: $desktop-width-x) {
       width: 25%;
-      padding: 170px 40px 40px;
+      flex-grow: 0;
+      padding: 20px;
     }
+
+    @media (min-width: 1700px) {
+      padding: 40px 20px;
+    }
+
     &--first {
       width: 100%;
       padding: 0;
@@ -46,10 +67,16 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      @media (min-width: $tablet-width) {
+
+      @media (min-width: 1140px) {
+        width: 33%;
+      }
+
+      @media (min-width: $desktop-width-x) {
         width: 50%;
       }
     }
+
     &--full {
       width: 100%;
       padding: 0;
@@ -57,47 +84,18 @@
       align-items: flex-end;
       border: none;
     }
+
     &--red {
       align-items: center;
       background-color: $color-title;
       padding: 0;
-    }
-    &--icon-1,
-    &--icon-2,
-    &--icon-3,
-    &--icon-4 {
-      position: relative;
-    }
-    &--icon-1::before,
-    &--icon-2::before,
-    &--icon-3::before,
-    &--icon-4::before {
-      content: "";
-      position: absolute;
-      top: 60px;
-      left: 40px;
-      width: 100px;
-      height: 100px;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-    &--icon-1::before {
-      background-image: url("../../img/icons/icon-adv-1.svg");
-    }
-    &--icon-2::before {
-      background-image: url("../../img/icons/icon-adv-2.svg");
-    }
-    &--icon-3::before {
-      background-image: url("../../img/icons/icon-adv-3.svg");
-    }
-    &--icon-4::before {
-      background-image: url("../../img/icons/icon-adv-4.svg");
     }
   }
 
   &__name {
     margin: 0;
     margin-bottom: 20px;
+    padding-top: 110px;
     font-family: $font-playfairDisplay;
     font-style: normal;
     font-weight: bold;
@@ -106,13 +104,57 @@
     letter-spacing: 0.02em;
 
     color: $color-grey-dark;
+
     @media (min-width: $desktop-width-xl) {
+      font-size: 19px;
+    }
+
+    @media (min-width: 2000px) {
       font-size: 21px;
     }
+
+    &--icon-1,
+    &--icon-2,
+    &--icon-3,
+    &--icon-4 {
+      position: relative;
+    }
+
+    &--icon-1::before,
+    &--icon-2::before,
+    &--icon-3::before,
+    &--icon-4::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--icon-1::before {
+      background-image: url("../../img/icons/icon-adv-1.svg");
+    }
+
+    &--icon-2::before {
+      background-image: url("../../img/icons/icon-adv-2.svg");
+    }
+
+    &--icon-3::before {
+      background-image: url("../../img/icons/icon-adv-3.svg");
+    }
+
+    &--icon-4::before {
+      background-image: url("../../img/icons/icon-adv-4.svg");
+    }
   }
+
   &__text {
     margin: 0;
   }
+
   &__number {
     position: relative;
     font-family: $font-spectral;
@@ -124,6 +166,11 @@
 
     padding-top: 30px;
     margin-bottom: 0;
+
+    @media (max-width: 1580px) {
+      line-height: 170px;
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -133,6 +180,7 @@
       @include sprite ($icon-plus);
     }
   }
+
   &__year {
     margin: 0 auto 40px;
     line-height: 22px;
@@ -142,45 +190,89 @@
 }
 
 .advantages__item.m-top {
-  // margin-top: 140px;
-  
-  @media (min-width: $desktop-width-xl) {
+  @media (min-width: $desktop-width-x) {
     margin-top: 10%;
+  }
+
+  @media (min-width: $desktop-width-xl) {
+    margin-top: 15%;
   }
 }
 
 
 @media (max-width: $mobile-width-only) {
   .advantages__item {
-    padding-left: 120px;
+    // padding-left: 120px;
     padding-top: 60px;
     padding-right: 50px;
     padding-bottom: 50px;
+
     &--first {
       padding: 40px 24px;
     }
+
     &:nth-child(4) {
       order: 4;
     }
+
     &:nth-child(5) {
       order: 5;
     }
+
     &:nth-child(6) {
       order: 3;
       padding-left: 0;
     }
   }
+
   .advantages__item.m-top {
     margin-top: 0;
   }
 
-  .advantages__item--icon-1::before,
-  .advantages__item--icon-2::before,
-  .advantages__item--icon-3::before,
-  .advantages__item--icon-4::before {
-    left: 15px;
+  .advantages__name--icon-1::before,
+  .advantages__name--icon-2::before,
+  .advantages__name--icon-3::before,
+  .advantages__name--icon-4::before {
+    left: 0;
+    width: 70px;
+    height: 70px;
   }
+
   .advantages__text {
     font-size: 14px;
+    padding-left: 80px;
+  }
+
+  .advantages__name {
+    padding-left: 80px;
+    padding-top: 0;
+  }
+}
+
+@media (max-height: 750px) and (min-width: 1140px) {
+  .advantages__item {
+    padding-top: 10px;
+  }
+
+  .advantages__name {
+    padding-top: 70px;
+
+    &--icon-1::before,
+    &--icon-2::before,
+    &--icon-3::before,
+    &--icon-4::before {
+      width: 60px;
+      height: 60px;
+
+    }
+  }
+
+  .advantages__number {
+    line-height: 140px;
+    font-size: 214px;
+  }
+
+  .advantages__text {
+    font-size: 13px;
   }
 }

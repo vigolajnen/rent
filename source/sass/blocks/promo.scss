@@ -19,6 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+
   &--info {
     width: 64%;
     display: flex;
@@ -29,14 +31,41 @@
     background-size: cover;
     background-position: center;
   }
+
   &--video {
+    position: relative;
     width: 36%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 98px;
+      height: 100%;
+      background: #fff;
+      z-index: 1;
+
+      @media (max-width: 1140px) {
+        background: transparent;
+      }
+    }
+
     & video {
+      position: absolute;
+      top: 59%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+
       max-width: 100%;
       margin: 0 auto;
+
+      @media (max-width: 1140px) {
+        left: 50%;
+      }
     }
   }
 }
@@ -44,7 +73,9 @@
 .promo__text {
   @media (min-width: $tablet-width) {
     max-width: 1226px;
-    padding-left: 150px;
+    padding-left: 190px;
+    padding-top: 150px;
+    padding-bottom: 100px;
   }
 }
 
@@ -60,7 +91,7 @@
   font-size: 22px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  
+
   animation-name: itemBlock;
   animation-duration: 1s;
   animation-delay: 0.1s;
@@ -83,6 +114,7 @@
   animation-name: itemBlock;
   animation-duration: 1s;
   animation-delay: 1.5s;
+
   &::before {
     position: absolute;
     content: "";
@@ -94,11 +126,25 @@
   }
 }
 
+@media (max-width: 960px) {
+  .promo__item {
+    &--info {
+      width: 100%;
+    }
+
+    &--video {
+      width: 100%;
+      display: none;
+    }
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .promo__item {
     &--info {
       width: 100%;
     }
+
     &--video {
       width: 100%;
       display: none;
@@ -111,11 +157,13 @@
     font-size: 15px;
     letter-spacing: 0.01em;
   }
+
   .promo__link {
     font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }
+
   .promo__text {
     padding-top: 274px;
     padding-left: 24px;

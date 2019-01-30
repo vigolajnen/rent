@@ -4,53 +4,79 @@
   height: 100%;
   margin-left: 100px;
   overflow: hidden;
+  border: 1px solid #d4d1d1;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
+    width: 95%;
     height: 100%;
-    margin: 0 auto;
     overflow: hidden;
+
     @media (min-width: $tablet-width) {
       flex-direction: row;
+      width: 90%;
+      margin-left: 100px;
     }
   }
+
   &__item {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    border: 1px solid #d4d1d1;
+    border-left: 1px solid transparent;
+
     @media (min-width: $tablet-width) {
       width: 85%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-left: 1px solid #d4d1d1;
     }
+
     @media (min-width: $desktop-width) {
       width: 45%;
     }
+
     @media (min-width: $desktop-width-xl) {
       width: 31.3%;
     }
   }
+
   &__box {
-    padding-left: 150px;
+    padding-left: 100px;
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 150px;
+    }
+
     &::after {
       position: absolute;
       content: "";
-      bottom: 10px;
-      right: 30px;
+      bottom: 50%;
+      right: 10px;
       display: block;
       width: 20px;
       height: 20px;
-      @include sprite ($icon-arrow-double);
+      transform: translateY(50%);
+
+      @media (min-width: $tablet-width) {
+        @include sprite ($icon-arrow-double);
+      }
+
+      @media (min-width: $desktop-width-x) {
+        right: 20px;
+      }
     }
 
     &--icon-1,
@@ -58,93 +84,147 @@
     &--icon-3 {
       position: relative;
     }
+
     &--icon-1::before,
     &--icon-2::before,
     &--icon-3::before {
       position: absolute;
       content: "";
       top: 0;
-      left: 20px;
+      left: 10px;
       display: block;
-      width: 100px;
-      height: 100px;
+      width: 77px;
+      height: 77px;
       background-repeat: no-repeat;
       background-size: cover;
+
+      @media (min-width: $tablet-width) {
+        left: 20px;
+        width: 100px;
+        height: 100px;
+      }
     }
 
     &--icon-1::before {
       background-image: url("../../img/icons/icon-task-1.svg");
     }
+
     &--icon-2::before {
       background-image: url("../../img/icons/icon-task-2.svg");
     }
+
     &--icon-3::before {
-      background-image: url("../../img/icons/icon-task-3.svg");
+      background-image: url("../../img/icons/icon-task-3-1.svg");
     }
   }
+
   &__mark {
     line-height: 18px;
     font-size: 12px;
     letter-spacing: 0.12em;
     color: #B3282D;
+    text-transform: uppercase;
   }
+
   &__name {
+    margin-right: 10px;
     max-width: 300px;
+    font-family: $font-playfairDisplay;
     font-style: normal;
     font-weight: bold;
-    line-height: normal;
-    font-size: 16px;
-    // font-size: calc(100vw * 0.011);
+    line-height: 19px;
+    // font-size: 15px;
     letter-spacing: 0.02em;
     color: #444444;
-    @media (min-width: $tablet-width) {
-      font-size: 21px;
+    @include ff('font-size', (480px: 15px, 1920px: 18px));
+
+    @media (min-width: $desktop-width) {
+      margin-right: 45px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 13px;
     }
   }
+
   &__buttons {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 100px;
-    height: 100%;
-    font-size: 40px;
+    height: 230px;
+    border-left: 1px solid #d4d1d1;
+
+    @media (min-width: $tablet-width) {
+      height: 100%;
+      border-rigth: 1px solid #d4d1d1;
+      min-height: 231px;
+    }
+
+    @media (min-width: 1140px) {
+      max-height: auto;
+    }
+
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.slider-task__button-next {
+  position: relative;
+  width: 80px;
+  height: 60px;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    // height: 30%;
+  }
+
+  @media (min-width: 1140px) {
+    height: 40%;
+  }
+
+  &::before {
+    position: absolute;
+    content: ">";
+    top: 58%;
+    left: 50%;
+    display: block;
+    font-size: 30px;
+    line-height: 12px;
+    width: 30px;
+    height: 30px;
+    color: #dddddd;
+    transform: translate(-50%, -50%);
+    color: #b22a2e;
   }
 }
 
 .slider-task__button-prev {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 60px;
   outline: none;
-  &::before {
-    position: absolute;
-    content: ">";
-    top: 0;
-    left: 0;
-    display: block;
-    width: 30px;
-    height: 30px;
-    color: #b22a2e;
-    // transform: translateY(-50%);
-    // @include sprite ($icon-arrow-red);
+
+  @media (min-width: $tablet-width) {
+    // height: 30%;
   }
-}
-.slider-task__button-next {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  outline: none;
+
+  @media (min-width: 1140px) {
+    height: 50%;
+  }
+
   &::before {
     position: absolute;
     content: "<";
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
     display: block;
+    font-size: 30px;
+    line-height: 12px;
     width: 30px;
     height: 30px;
     color: #dddddd;
+    transform: translate(-50%, -50%);
     // @include sprite ($icon-arrow-grey);
   }
 }
@@ -153,8 +233,18 @@
   line-height: normal;
   font-size: 12px;
   letter-spacing: 0.12em;
+}
 
-  position: absolute;
-    top: 50px;
-    left: 40px;
+
+.slider-task .slick-initialized .slick-slide {
+  display: flex;
+  height: 100%;
+}
+
+.slider-task .slick-track {
+  display: flex;
+}
+
+.slider-task .slick-list {
+  display: flex;
 }

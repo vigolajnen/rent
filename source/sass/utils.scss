@@ -25,7 +25,10 @@
 }
 
 @keyframes navBarleft {
-  from { transform: translateX(-100px); }
+  from {
+    transform: translateX(-100px);
+  }
+
   to {
     transform: translateX(0);
   }
@@ -36,6 +39,7 @@
     transform: translateY(-100px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -50,4 +54,10 @@
   to {
     transform: translateY(0);
   }
+}
+
+.itemBlock {
+  animation-name: itemBlock;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
 }
