@@ -31,19 +31,19 @@
           <div class="navigation__wrapper">
             <ul class="navigation__list">
               <li class="navigation__item logo">
-                <a class="navigation__link " href="#">
-                  <img src="img/header/logo.png" alt="логотип компании">
+                <a class="navigation__link ">
+                  <img src="img/header/logo.svg" alt="логотип компании">
                 </a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link " href="#">Собственникам</a>
+              <!-- <li class="navigation__item">
+                <a class="navigation__link" href="#">Собственникам</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link " href="#">Арендаторам</a>
+                <a class="navigation__link" href="#">Арендаторам</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link " href="#">Инвесторам</a>
-              </li>
+                <a class="navigation__link" href="#">Инвесторам</a>
+              </li> -->
             </ul>
           </div>
         </nav>
@@ -62,11 +62,11 @@
             <div class="promo__text">
               <div class="promo__title title title--white ">Выгодное и комфортное владение недвижимостью</div>
               <p class="promo__caption">Мультифункциональный брокер коммерческой недвижимости</p>
-              <a class="promo__link " href="#">Подробнее</a>
+              <!-- <a class="promo__link" href="#">Подробнее</a> -->
             </div>
           </div>
           <div class="promo__item promo__item--video">
-            <video width="700" height="500" autoplay="autoplay" loop>
+            <video width="700" height="500" poster="img/promo/5.png" autoplay muted loop playsinline>
               <source src="video/promo-2.mp4" type="video/mp4">
               <source src="video/promo-3.ogg" type="video/ogg">
             </video>
@@ -74,37 +74,36 @@
         </div>
         <div class="section__slider slider-task">
           <div id="slider-task" class="slider-task__wrapper">
-            <div class="slider-task__item">
+            <a class="slider-task__item" href="#">
               <div class="slider-task__box slider-task__box--icon-1">
                 <span class="slider-task__mark">Задачи</span>
                 <p class="slider-task__name ">Сдать помещение в аренду</p>
               </div>
-            </div>
-            <div class="slider-task__item">
+            </a>
+            <a class="slider-task__item" href="#">
               <div class="slider-task__box slider-task__box--icon-2">
                 <span class="slider-task__mark">Задачи</span>
                 <p class="slider-task__name ">Повысить доходность помещения</p>
               </div>
-            </div>
-            <div class="slider-task__item">
+            </a>
+            <a class="slider-task__item" href="#">
               <div class="slider-task__box slider-task__box--icon-3">
                 <span class="slider-task__mark">Задачи</span>
                 <p class="slider-task__name ">Снизить затраты на эксплуатацию помещения</p>
               </div>
-            </div>
-            <div class="slider-task__item">
-              <div class="slider-task__box slider-task__box--icon-2">
+            </a>
+            <a class="slider-task__item" href="#">
+              <div class="slider-task__box slider-task__box--icon-4">
                 <span class="slider-task__mark">Задачи</span>
-                <p class="slider-task__name ">Согласовать и улучшить помещение (перепланировка, ремонт, доп.
-                  оборудование на фасаде и т.д.)</p>
+                <p class="slider-task__name ">Согласовать и улучшить помещение</p>
               </div>
-            </div>
-            <div class="slider-task__item">
-              <div class="slider-task__box slider-task__box--icon-3">
+            </a>
+            <a class="slider-task__item" href="#">
+              <div class="slider-task__box slider-task__box--icon-5">
                 <span class="slider-task__mark">Задачи</span>
                 <p class="slider-task__name ">Продать быстро и выгодно</p>
               </div>
-            </div>
+            </a>
           </div>
           <div class="slider-task__buttons">
             <button class="slider-task__button-next button" aria-label="вперед">
@@ -121,30 +120,41 @@
             <h2 class="advantages__title title title--before">Наши преимущества</h2>
           </div>
           <div class="advantages__item m-top">
-            <h3 class="advantages__name advantages__name--icon-1">Готовые решения "под ключ"</h3>
-            <p class="advantages__text ">Вы получите финальный результат</p>
+            <div class="advantages__box">
+              <h3 class="advantages__name advantages__name--icon-1">Готовые решения "под ключ"</h3>
+              <p class="advantages__text ">Вы получите финальный результат</p>
+            </div>
           </div>
           <div class="advantages__item m-top">
-            <h3 class="advantages__name advantages__name--icon-2">Команда специалистов</h3>
-            <p class="advantages__text ">В штате собственная служба технической эксплуатации, проектировщики и
-              ремонтная бригада</p>
+            <div class="advantages__box">
+              <h3 class="advantages__name advantages__name--icon-2">Команда специалистов</h3>
+              <p class="advantages__text ">В штате собственная служба технической эксплуатации, проектировщики и
+                ремонтная бригада</p>
+            </div>
           </div>
           <div class="advantages__item">
-            <h3 class="advantages__name advantages__name--icon-3">База арендаторов</h3>
-            <p class="advantages__text ">Мы знаем требованиям к помещениям всех крупных арендаторов</p>
+            <div class="advantages__box">
+              <h3 class="advantages__name advantages__name--icon-3">База арендаторов</h3>
+              <p class="advantages__text ">Мы знаем требованиям к помещениям всех крупных арендаторов</p>
+            </div>
           </div>
           <div class="advantages__item">
-            <h3 class="advantages__name advantages__name--icon-4">Юридическая экспертиза</h3>
-            <p class="advantages__text ">Выгодные договора, знание отраслевого законодательства, отслеживание изменений</p>
+            <div class="advantages__box">
+              <h3 class="advantages__name advantages__name--icon-4">Юридическая экспертиза</h3>
+              <p class="advantages__text ">Выгодные договора, знание отраслевого законодательства, отслеживание
+                изменений</p>
+            </div>
           </div>
           <div class="advantages__item advantages__item--red">
-            <div class="advantages__number">5</div>
-            <p class="advantages__year">Лет опыта работы</p>
+            <div class="advantages__box">
+              <div class="advantages__number">5</div>
+              <p class="advantages__year">Лет опыта работы</p>
+            </div>
           </div>
         </div>
         <div class="section__box box">
           <div class="box__inner">
-<a href="#feedback" class="box__link scroll-feedback"><span>Связаться с нами</span></a>
+            <a href="#feedback" class="box__link scroll-feedback"><span>Связаться с нами</span></a>
           </div>
         </div>
       </section>
@@ -169,10 +179,17 @@
                   </li>
                   <li class="feedback__form-item">
                     <label class="visually-hidden" for="mail">Ваша почта</label>
-                    <input class="feedback__form-input" id="mail" type="text" placeholder="E-mail*">
+                    <input class="feedback__form-input" id="mail" type="text" placeholder="E-mail">
                   </li>
                 </ul>
-                <button class="feedback__form-button feedback__form-button--icon button" type="submit">Отправить</button>
+                <div class="feedback__bottom">
+                  <p class="warning">Отправляя заявку, я подтверждаю,что ознакомлен и согласен с <a href="#">Политикой
+                      конфиденциальности
+                      данного
+                      сайта</a></p>
+                  <button class="feedback__form-button feedback__form-button--icon button" type="submit">Отправить</button>
+                </div>
+
               </form>
             </div>
           </div>

@@ -14,25 +14,31 @@
 
   &--bg-feedback {
     background-image: url("../../img/feedback/feedback-mob.jpg");
+    background-size: 100%;
 
     @media (min-width: 480px) {
       background-image: url("../../img/feedback/feedback-bg.jpg");
+      background-size: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
       background-size: cover;
     }
   }
 
   &--bg-advantages {
+
     background-image: url("../../img/advantages/advantages-bg.jpg");
     background-position: top right;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      background-size: 56% 100%;
+      background-size: 51vw 100%;
     }
 
     @media (min-width: $desktop-width-xl) {
-      background-size: 56% 100vh;
+      background-size: 51vw 100vh;
     }
   }
 
@@ -49,11 +55,17 @@
   }
 
   &__advantages {
-    height: 85%;
+    // height: 85%;
+    height: calc(100vh - 20vh);
+
+    @media (min-width: $tablet-width) {
+      height: calc(100vh - 40vh);
+    }
   }
 
   &__box {
-    height: 15%;
+    // height: 15%;
+    height: 20vh;
   }
 }
 
@@ -76,13 +88,12 @@
     padding-left: 0;
   }
 
-
   &__inner {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     background-color: #ffffff;
-    border-top: 1px solid #d4d1d1;
+    // border-top: 1px solid #d4d1d1;
   }
 
   &__link {
@@ -104,12 +115,22 @@
     text-decoration: none;
 
     @media (min-width: 1140px) {
+      width: 33.33%;
+    }
+
+
+
+    @media (min-width: 1280px) and (max-width: 1505px) {
+      width: 25%;
+    }
+
+    @media (min-width: 1551px) {
       width: 34%;
     }
 
-    @media (min-width: $desktop-width-x) {
-      width: 25%;
-    }
+    // @media (min-width: $desktop-width-x) {
+    //   width: 25%;
+    // }
   }
 }
 

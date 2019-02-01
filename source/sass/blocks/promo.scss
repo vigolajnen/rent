@@ -2,17 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // min-height: 80%;
   background-color: #E9E9E9;
-  // &--bg {
-  //   background-image: url("../../img/promo/promo.jpg");
-  //   background-position: top left;
-  //   background-size: 64% 100vh;
-  //   background-repeat: no-repeat;
-  // }
-  // & img {
-  //   padding: 0 100px;
-  // }
 }
 
 .promo__item {
@@ -22,7 +12,7 @@
   overflow: hidden;
 
   &--info {
-    width: 64%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +24,7 @@
 
   &--video {
     position: relative;
-    width: 36%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;

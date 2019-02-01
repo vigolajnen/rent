@@ -1,0 +1,17 @@
+<svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.017 49.1939C39.3105 48.1707 37.9453 46.2947 37.9453 44.0776C37.9453 40.8373 40.6757 38.1086 43.918 38.1086C46.3071 38.1086 48.3549 39.473 49.3788 41.5195" stroke="#B22A2E" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M41.0168 57.5505C39.1397 57.2094 37.4332 56.3567 36.068 55.3334L33.3377 58.0621L29.754 54.4807L32.4844 51.752C31.4605 50.2171 30.6073 48.3412 30.266 46.2947H26.5117V41.5195H30.266C30.6073 39.473 31.4605 37.7675 32.4844 36.0621L29.754 33.3334L33.3377 29.752L36.068 32.4807C37.6039 31.4575 39.481 30.6047 41.5288 30.2637V26.5117H46.4776V30.4342C48.5254 30.7753 50.4025 31.628 51.9383 32.6513L54.6687 29.9226L58.2523 33.504L55.522 36.2326C56.7165 37.7675 57.3991 39.6435 57.7404 41.69" stroke="#B22A2E" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M75.4876 41.5195H41.0166V69.4885H75.4876V41.5195Z" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M51.9394 52.4341L47.3319 57.0387L44.6016 54.1395" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M51.9394 60.7905L47.3319 65.3952L44.6016 62.6665" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M56.375 61.3022H70.1975" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M56.375 64.5427H63.7129" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M56.375 52.4341H70.1975" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M56.375 55.6743H63.7129" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M45.1133 44.5891H58.7652" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<path d="M41.0166 47.8296H75.4876" stroke="#55565A" stroke-width="0.8" stroke-miterlimit="10"/>
+<line x1="2.18557e-08" y1="83.7007" x2="100" y2="83.7007" stroke="#9F9FA0" stroke-width="0.5"/>
+<line x1="0.617188" y1="15.1821" x2="100.617" y2="15.1821" stroke="#9F9FA0" stroke-width="0.5"/>
+<line x1="15.6816" y1="1.75455e-08" x2="15.6816" y2="100" stroke="#9F9FA0" stroke-width="0.5"/>
+<line x1="86.6699" y1="1.85181" x2="86.6699" y2="83.9506" stroke="#9F9FA0" stroke-width="0.5"/>
+</svg>

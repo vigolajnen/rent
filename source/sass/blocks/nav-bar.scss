@@ -8,11 +8,13 @@
   background-color: #B22A2E;
   animation-name: navBarleft;
   animation-duration: 0.5s;
+
   & .button {
     position: relative;
     top: 0;
     left: 0;
   }
+
   &__icon {
     padding: 40px;
   }
@@ -22,6 +24,7 @@
   position: relative;
   width: 100px;
   height: 100px;
+
   &::before {
     position: absolute;
     content: "";
@@ -29,8 +32,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 30px;
     background-image: url("../../img/icons/icon-open.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -44,6 +47,7 @@
     left: auto;
     right: 0;
   }
+
   .nav-bar__button {
     width: 64px;
     height: 64px;

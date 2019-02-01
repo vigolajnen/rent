@@ -35,6 +35,7 @@
     justify-content: center;
 
     border-left: 1px solid transparent;
+    text-decoration: none;
 
     @media (min-width: $tablet-width) {
       width: 85%;
@@ -81,17 +82,22 @@
 
     &--icon-1,
     &--icon-2,
-    &--icon-3 {
+    &--icon-3,
+    &--icon-4,
+    &--icon-5 {
       position: relative;
     }
 
     &--icon-1::before,
     &--icon-2::before,
-    &--icon-3::before {
+    &--icon-3::before,
+    &--icon-4::before,
+    &--icon-5::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: 50%;
       left: 10px;
+      transform: translateY(-50%);
       display: block;
       width: 77px;
       height: 77px;
@@ -106,15 +112,23 @@
     }
 
     &--icon-1::before {
-      background-image: url("../../img/icons/icon-task-1.svg");
+      background-image: url("../../img/icons/icon-group01.svg");
     }
 
     &--icon-2::before {
-      background-image: url("../../img/icons/icon-task-2.svg");
+      background-image: url("../../img/icons/icon-group02.svg");
     }
 
     &--icon-3::before {
-      background-image: url("../../img/icons/icon-task-3-1.svg");
+      background-image: url("../../img/icons/icon-group03.svg");
+    }
+
+    &--icon-4::before {
+      background-image: url("../../img/icons/icon-gr-1.svg");
+    }
+
+    &--icon-5::before {
+      background-image: url("../../img/icons/icon-task-rub.svg");
     }
   }
 
@@ -128,6 +142,7 @@
 
   &__name {
     margin-right: 10px;
+    margin-top: 14px;
     max-width: 300px;
     font-family: $font-playfairDisplay;
     font-style: normal;
@@ -136,7 +151,11 @@
     // font-size: 15px;
     letter-spacing: 0.02em;
     color: #444444;
-    @include ff('font-size', (480px: 15px, 1920px: 18px));
+    @include ff('font-size', (480px: 15px, 1920px: 21px));
+
+    @media (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-right: 45px;
@@ -149,13 +168,13 @@
 
   &__buttons {
     width: 100px;
-    height: 230px;
+    // height: 230px;
     border-left: 1px solid #d4d1d1;
 
     @media (min-width: $tablet-width) {
       height: 100%;
       border-rigth: 1px solid #d4d1d1;
-      min-height: 231px;
+      // min-height: 231px;
     }
 
     @media (min-width: 1140px) {
@@ -185,17 +204,20 @@
 
   &::before {
     position: absolute;
-    content: ">";
+    content: "";
     top: 58%;
     left: 50%;
     display: block;
     font-size: 30px;
     line-height: 12px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: #dddddd;
     transform: translate(-50%, -50%);
     color: #b22a2e;
+    background-image: url("../../img/icons/icon-arrow-slide-red.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -215,16 +237,19 @@
 
   &::before {
     position: absolute;
-    content: "<";
+    content: "";
     top: 50%;
     left: 50%;
     display: block;
     font-size: 30px;
     line-height: 12px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: #dddddd;
     transform: translate(-50%, -50%);
+    background-image: url("../../img/icons/icon-arrow-slide.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     // @include sprite ($icon-arrow-grey);
   }
 }
