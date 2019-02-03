@@ -101,7 +101,7 @@ gulp.task("sprite-svg", () => {
       svgo({
         plugins: [{
           removeAttrs: {
-            attrs: ["fill", "fill-rule", "stroke", "style"]
+            attrs: ["fill", "fill-rule", "style"]
           }
         }]
       })

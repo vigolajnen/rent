@@ -25,3 +25,34 @@
   padding: 100px 96px;
   background: #B22A2E;
 }
+
+.btn_animation--white {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn_animation--white:before {
+  position: absolute;
+  top: 0;
+  left: 200%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  transition: 1.2s all;
+  background-color: #E9E9E9;
+}
+
+.btn_animation--white:hover:before {
+  left: 5%;
+  transition: .6s all;
+}
+
+.btn_animation--white:hover span {
+  color: $color-black;
+  transition: .6s all;
+}
+
+.btn_animation--white>span {
+  z-index: 1;
+}

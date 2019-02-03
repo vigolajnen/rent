@@ -1,7 +1,7 @@
 .feedback {
   position: relative;
 
-  @media (min-width: $desktop-width-xl) {
+  @media (min-width: $desktop-width-x) {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -13,11 +13,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 100%;
-    padding: 10% 8% 10%;
+    padding: 3% 8%  ;
     background-color: #efefef;
 
     @media (min-width: $tablet-width) {
       margin-left: 80px;
+    }
+    @media (min-width: $desktop-width-xl) {
+      padding: 10% 8% 10%;
     }
   }
 
@@ -121,7 +124,7 @@
 @media (max-width: $mobile-width-only) {
   .feedback {
     position: relative;
-    padding-top: 275px;
+    padding-top: 220px;
     width: 100vw;
     height: 100%;
 

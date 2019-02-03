@@ -29,15 +29,13 @@
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     border-left: 1px solid transparent;
     text-decoration: none;
-
-    @media (min-width: $tablet-width) {
+    
+    @media(min-width: $tablet-width) {
       width: 85%;
       padding-top: 50px;
       padding-bottom: 50px;
@@ -272,4 +270,9 @@
 
 .slider-task .slick-list {
   display: flex;
+}
+
+.slider-task__item.slick-slide:hover .slider-task__name {
+  color: $color-title;
+  transition: 1s;
 }

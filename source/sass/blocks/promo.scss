@@ -12,7 +12,7 @@
   overflow: hidden;
 
   &--info {
-    width: 65%;
+    width: 64.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +20,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-width: 1600px) {
+      width: 65%;
+    }
   }
 
   &--video {
@@ -56,6 +60,9 @@
       @media (max-width: 1140px) {
         left: 50%;
       }
+    }
+    & video[poster] {
+      padding: 20%;
     }
   }
 }
@@ -159,5 +166,30 @@
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 100px;
+    @media (min-width: $desktop-width) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+@media (max-width: 375px) {
+  #promo {
+    // min-height: 100vh;
+  }
+  .promo {
+    height: 65vh;
+  }
+  .promo__text {
+    padding: 40px 20px;
+  }
+  .slider-tasx {
+    height: 35vh;
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
   }
 }
