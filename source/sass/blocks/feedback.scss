@@ -1,7 +1,7 @@
 .feedback {
   position: relative;
 
-  @media (min-width: $desktop-width-x) {
+  @media (min-width: 1141px) {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -13,12 +13,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 100%;
-    padding: 3% 8%  ;
+    padding: 3% 8%;
     background-color: #efefef;
 
     @media (min-width: $tablet-width) {
       margin-left: 80px;
     }
+
     @media (min-width: $desktop-width-xl) {
       padding: 10% 8% 10%;
     }

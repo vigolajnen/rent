@@ -19,11 +19,9 @@
     min-height: 60vh;
   }
 
-  
-
   @media (min-width: $desktop-width-xl) {
     padding-right: 15vw;
-    margin-top: 20vh;
+    margin-top: 15vh;
     min-height: 60vh;
   }
 
@@ -58,7 +56,7 @@
     background-color: #ffffff;
     border: 1px solid #d4d1d1;
 
-     &:nth-child(4) {
+    &:nth-child(4) {
       order: 4;
     }
 
@@ -81,8 +79,9 @@
 
     @media (min-width: $desktop-width) {
       justify-content: flex-start;
-      width: 20vw;
+      width: 17vw;
       padding-top: 60px;
+
       &:nth-child(4) {
         order: 0;
       }
@@ -98,12 +97,9 @@
 
     @media (min-width: 1141px) {
       width: 17vw;
-
     }
 
-    @media (min-width: $desktop-width-x) {
-
-    }
+    @media (min-width: $desktop-width-x) {}
 
     &--first {
       width: 100vw;
@@ -113,13 +109,11 @@
       justify-content: center;
       align-items: flex-start;
 
-      @media (min-width: 1140px) {
+      @media (min-height: 900px) and (min-width: 1140px) {
         width: 34vw;
       }
 
-      @media (min-width: $desktop-width-x) {
-
-      }
+      @media (min-width: $desktop-width-x) {}
     }
 
     &--full {
@@ -141,9 +135,7 @@
         width: 17vw;
       }
 
-      @media (min-width: $desktop-width-x) {
-
-      }
+      @media (min-width: $desktop-width-x) {}
     }
   }
 
@@ -160,7 +152,9 @@
 
     color: $color-grey-dark;
 
-    @include ff('font-size', (480px: 16px, 1920px: 21px));
+    @include ff("font-size",
+    (480px: 16px,
+      1920px: 21px));
 
     @media (min-width: $tablet-width) {
       padding-top: 100px;
@@ -171,9 +165,7 @@
       font-size: 13px;
     }
 
-    &--icon-1 {
-
-    }
+    &--icon-1 {}
 
     &--icon-1,
     &--icon-2,
@@ -196,9 +188,7 @@
       background-size: contain;
     }
 
-
     &--icon-1::before {
-
       background-image: url("../../img/icons/icon-group06.svg");
     }
 
@@ -211,6 +201,7 @@
     }
 
     &--icon-4::before {
+      bottom: 60px;
       background-image: url("../../img/icons/icon-group07.svg");
     }
   }
@@ -241,7 +232,7 @@
       top: 50%;
       right: -40px;
       transform: translateY(-50%);
-      @include sprite ($icon-plus);
+      @include sprite($icon-plus);
     }
   }
 
@@ -249,14 +240,12 @@
     margin: 0 auto 40px;
     line-height: 22px;
     font-size: 18px;
-    color: #F1EEE9;
+    color: #f1eee9;
   }
 }
 
-
 @media (max-width: $mobile-width-only) {
   .advantages__item {
-
     // padding-top: 30px;
     // padding-right: 30px;
     // padding-bottom: 30px;
@@ -264,8 +253,6 @@
     // &--first {
     //   padding: 40px 24px;
     // }
-
-   
   }
 
   .advantages__name--icon-1::before,
@@ -287,9 +274,11 @@
     padding-left: 120px;
     padding-top: 0;
   }
+
   .advantages__number {
     padding-top: 64px;
   }
+
   .advantages__year {
     margin-top: 30px;
   }
@@ -328,5 +317,44 @@
 .advantages__item {
   &--red {
     justify-content: center;
+  }
+}
+
+@media (max-height: 900px) and (min-width: 1140px) {
+  .section--bg-advantages {
+    background-size: 51.5vw 100%;
+  }
+
+  .advantages {
+    // margin-top: 15vh;
+    margin-top: 10%;
+    min-height: calc(80vh - 10%);
+  }
+
+  .advantages__item {
+    padding-top: 0;
+    width: 17vw;
+  }
+
+  .advantages__item--first {
+    width: 34vw;
+  }
+
+  .advantages__number {
+    font-size: 220px;
+
+    &::before {
+      right: -5px;
+    }
+  }
+
+  .box__item:last-child {
+    width: 31.5%;
+  }
+}
+
+@media (min-height: 900px) and (min-width: 1140px) {
+  .advantages__item--first {
+    width: 34vw;
   }
 }

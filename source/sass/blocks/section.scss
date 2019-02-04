@@ -38,7 +38,7 @@
     }
 
     @media (min-width: $desktop-width-xl) {
-      background-size: 51vw 100vh;
+      background-size: 52vw 100vh;
     }
   }
 
@@ -65,7 +65,8 @@
 
   &__box {
     // height: 15%;
-    min-height: 25vh;
+    // min-height: 25vh;
+    min-height: 20vh;
   }
 }
 
@@ -101,10 +102,12 @@
     &:hover:before {
       left: 0;
     }
+
     &:first-child {
       width: 64.5%;
       background-color: #ffffff;
     }
+
     &:last-child {
       width: 34.5%;
 
@@ -115,6 +118,7 @@
       @media (min-width: 1500px) {
         width: 39.5%;
       }
+
       @media (min-width: 1550px) {
         width: 33%;
       }
@@ -172,5 +176,3 @@
 //     // overflow-y: scroll;
 //   }
 // }
-
-
