@@ -32,14 +32,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     text-decoration: none;
-    
+
     @media(min-width: $tablet-width) {
       width: 85%;
       padding-top: 50px;
       padding-bottom: 50px;
-      border-left: 1px solid #d4d1d1;
+      border-right: 1px solid #d4d1d1;
     }
 
     @media (min-width: $desktop-width) {
@@ -122,7 +122,7 @@
     }
 
     &--icon-4::before {
-      background-image: url("../../img/icons/icon-gr-1.svg");
+      background-image: url("../../img/icons/icon-compass.svg");
     }
 
     &--icon-5::before {
@@ -167,7 +167,11 @@
   &__buttons {
     width: 100px;
     // height: 230px;
-    border-left: 1px solid #d4d1d1;
+    // border-left: 1px solid #d4d1d1;
+
+    @media (max-width: $mobile-width-only) {
+      border-left: 1px solid #d4d1d1;
+    }
 
     @media (min-width: $tablet-width) {
       height: 100%;
@@ -177,6 +181,7 @@
 
     @media (min-width: 1140px) {
       max-height: auto;
+      border-left: 1px solid #d4d1d1;
     }
 
     display: flex;
@@ -275,4 +280,10 @@
 .slider-task__item.slick-slide:hover .slider-task__name {
   color: $color-title;
   transition: 1s;
+}
+
+@media (max-height: 900px) and (max-width: 1440px) {
+  .slider-task__buttons {
+    width: 80px;
+  }
 }

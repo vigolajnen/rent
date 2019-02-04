@@ -1,9 +1,13 @@
 .pagination {
+  margin-top: 15px;
+
   &__item {
     position: relative;
+    padding: 0 3px;
     line-height: normal;
     font-size: 12px;
     letter-spacing: 0.12em;
+
     &:last-child::after {
       position: absolute;
       content: "/";
@@ -11,6 +15,7 @@
       left: -5px;
 
     }
+
     &.active {
       color: $color-title;
     }

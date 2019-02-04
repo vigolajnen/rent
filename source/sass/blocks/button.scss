@@ -10,9 +10,7 @@
   border: none;
 }
 
-.button-more {
-
-}
+.button-more {}
 
 .button.button-scroll {
   width: 25%;
@@ -26,33 +24,35 @@
   background: #B22A2E;
 }
 
-.btn_animation--white {
+.btn_animation--red {
   position: relative;
   overflow: hidden;
 }
 
-.btn_animation--white:before {
+.btn_animation--red:before {
   position: absolute;
   top: 0;
-  left: 200%;
+  left: -100%;
   bottom: 0;
   width: 100%;
   height: 100%;
   content: '';
   transition: 1.2s all;
-  background-color: #E9E9E9;
+  background-color: #B22A2E;
 }
 
-.btn_animation--white:hover:before {
-  left: 5%;
+.btn_animation--red:hover:before {
+  left: 0;
   transition: .6s all;
 }
 
-.btn_animation--white:hover span {
-  color: $color-black;
+.btn_animation--red:hover span {
+  color: #ffffff;
   transition: .6s all;
 }
 
-.btn_animation--white>span {
+.btn_animation--red>span {
+  position: relative;
+  color: #333333;
   z-index: 1;
 }

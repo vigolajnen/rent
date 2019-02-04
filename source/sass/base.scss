@@ -38,7 +38,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  // overflow-y: visible !important;
+  overflow-y: hidden;
   overflow-x: hidden;
 
   font-family: $font-norms;
@@ -51,7 +51,7 @@ body {
   }
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: 1140px) {
 
   body,
   html {
@@ -103,3 +103,13 @@ html {
 .wrapper {
   position: relative;
 }
+
+
+// ::-webkit-scrollbar {
+//   display: none;
+// }
+
+// ::-moz-scrollbar {
+//   width: 0px;
+//   height: 0px;
+// }

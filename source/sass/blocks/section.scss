@@ -37,9 +37,15 @@
       background-size: 51.75vw 100%;
     }
 
+
+
     @media (min-width: $desktop-width-xl) {
-      background-size: 52vw 100vh;
+      background-size: 53vw 100vh;
     }
+
+    // @media (min-width: 1640px) {
+    //   background-size: 52.1vw 100vh;
+    // }
   }
 
   &__promo {
@@ -71,7 +77,7 @@
 }
 
 .box {
-  margin-left: 13vw;
+  margin-left: $margin-left-base;
 
   padding-left: 100px;
   padding-right: 5%;
@@ -120,7 +126,7 @@
       }
 
       @media (min-width: 1550px) {
-        width: 33%;
+        width: 23vw;
       }
     }
   }
@@ -147,7 +153,7 @@
 
 @media (max-width: $mobile-width-only) {
   .section {
-    // transform: none !important;
+    transform: none !important;
     overflow: hidden;
   }
 
@@ -160,19 +166,19 @@
   }
 }
 
-// @media (max-width: $desktop-width) {
-//   .section {
-//     position: relative !important;
-//     height: 100%;
-//   }
+@media (max-width: $desktop-width) {
+  .section {
+    position: relative !important;
+    height: 100%;
+  }
 
-//   .onepage-pagination {
-//     display: none;
-//   }
+  .onepage-pagination {
+    display: none;
+  }
 
-//   .section-scroll.onepage-wrapper {
-//     transform: translate3d(0, 0, 0) !important;
-//     transition: none !important;
-//     // overflow-y: scroll;
-//   }
-// }
+  .section-scroll.onepage-wrapper {
+    transform: translate3d(0, 0, 0) !important;
+    transition: none !important;
+    // overflow-y: scroll;
+  }
+}

@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../img/promo/promo-2.jpg");
+    background-image: url("../../img/promo/promo-dark.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,7 +26,7 @@
     }
 
     @media (min-width: 1600px) {
-      width: 65.5%;
+      width: 65%;
     }
   }
 
@@ -58,7 +58,7 @@
       left: 40%;
       transform: translate(-50%, -50%);
 
-      max-width: 100%;
+      width: 100%;
       margin: 0 auto;
 
       @media (max-width: 1140px) {
@@ -67,7 +67,7 @@
     }
 
     & video[poster] {
-      padding: 20%;
+      padding: 5%;
     }
   }
 }
@@ -184,22 +184,48 @@
 
 @media (max-width: 375px) {
   #promo {
-    // min-height: 100vh;
+    min-height: 100vh;
   }
 
   .promo {
-    height: 65vh;
+    height: 70vh;
   }
 
   .promo__text {
     padding: 40px 20px;
   }
 
-  .slider-tasx {
-    height: 35vh;
+  .slider-task {
+    height: 30vh;
   }
 
   .slick-dotted.slick-slider {
     margin-bottom: 0;
+  }
+}
+
+
+@media (max-height: 900px) and (max-width: 1440px) {
+  .promo__item--video::before {
+    width: 80px;
+  }
+}
+
+
+@media (max-height: 900px) and (min-width: 1280px) {
+  .promo__item--info {
+    width: 65%;
+  }
+}
+
+@media (max-height: 900px) and (min-width: 1400px) {
+  .promo__item--info {
+    width: 65.3%;
+  }
+}
+
+@media (max-height: 900px) and (min-width: 1600px) {
+  .promo__item--info {
+    width: 64.7%;
   }
 }
