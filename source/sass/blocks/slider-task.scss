@@ -110,23 +110,23 @@
     }
 
     &--icon-1::before {
-      background-image: url("../../img/icons/icon-group01.svg");
+      background-image: url("../img/icons/icon-group01.svg");
     }
 
     &--icon-2::before {
-      background-image: url("../../img/icons/icon-group02.svg");
+      background-image: url("../img/icons/icon-group02.svg");
     }
 
     &--icon-3::before {
-      background-image: url("../../img/icons/icon-group03.svg");
+      background-image: url("../img/icons/icon-group03.svg");
     }
 
     &--icon-4::before {
-      background-image: url("../../img/icons/icon-compass.svg");
+      background-image: url("../img/icons/icon-compass.svg");
     }
 
     &--icon-5::before {
-      background-image: url("../../img/icons/icon-task-rub.svg");
+      background-image: url("../img/icons/icon-task-rub.svg");
     }
   }
 
@@ -218,7 +218,7 @@
     color: #dddddd;
     transform: translate(-50%, -50%);
     color: #b22a2e;
-    background-image: url("../../img/icons/icon-arrow-slide-red.svg");
+    background-image: url("../img/icons/icon-arrow-slide-red.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -250,7 +250,7 @@
     height: 20px;
     color: #dddddd;
     transform: translate(-50%, -50%);
-    background-image: url("../../img/icons/icon-arrow-slide.svg");
+    background-image: url("../img/icons/icon-arrow-slide.svg");
     background-repeat: no-repeat;
     background-size: contain;
     // @include sprite ($icon-arrow-grey);

@@ -13,11 +13,11 @@
   }
 
   &--bg-feedback {
-    background-image: url("../../img/feedback/feedback-mob.jpg");
+    background-image: url("../img/feedback/feedback-mob.jpg");
     background-size: 100%;
 
     @media (min-width: 480px) {
-      background-image: url("../../img/feedback/feedback-bg.jpg");
+      background-image: url("../img/feedback/feedback-bg.jpg");
       background-size: 100%;
     }
 
@@ -28,7 +28,7 @@
 
   &--bg-advantages {
 
-    background-image: url("../../img/advantages/advantages-bg.jpg");
+    background-image: url("../img/advantages/advantages-bg.jpg");
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
